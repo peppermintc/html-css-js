@@ -1,0 +1,16 @@
+{
+  "items": [
+    {
+      "category": "pants",
+      "color": "blue"
+    },
+    {
+      "category": "pants",
+      "color": "yellow"
+    },
+    {
+      "category": "pants",
+      "color": "pink"
+    }
+  ]
+}
