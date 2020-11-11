@@ -27,3 +27,5 @@
 - 스크롤링 이벤트의 경우에는 event.preventDefault()로 브라우저에서 화면 스크롤되는 것을 취소 할 수 없다 기본적으로 passive event listener이기 때문이다
 - addEventListener의 옵션으로 passive: true를 설정하면 preventDefault()로 브라우저 동작을 취소할 수 없게된다
 - passive: false 옵션을 주게되면 active event listener가 되어 preventDefault()를 사용 할 수 있다
+
+### line-height: 100%; (CSS)를 이용하면 브라우저 기본 속성 때문에 상하가 어긋난 글자를 올바르게 중간으로 위치하게 할 수 있다
