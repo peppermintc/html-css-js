@@ -29,3 +29,8 @@
 - passive: false 옵션을 주게되면 active event listener가 되어 preventDefault()를 사용 할 수 있다
 
 ### line-height: 100%; (CSS)를 이용하면 브라우저 기본 속성 때문에 상하가 어긋난 글자를 올바르게 중간으로 위치하게 할 수 있다
+
+### getBoundingClientRect()를 이용하면 쿼리셀렉터로 선택한 Element의 사이즈와 포지션을 알 수 있음
+
+        const field = document.querySelector('.game__field');
+        const fieldRect = field.getBoundingClientRect();
