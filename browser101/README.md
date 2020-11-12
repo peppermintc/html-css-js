@@ -32,5 +32,7 @@
 
 ### getBoundingClientRect()를 이용하면 쿼리셀렉터로 선택한 Element의 사이즈와 포지션을 알 수 있음
 
-        const field = document.querySelector('.game__field');
-        const fieldRect = field.getBoundingClientRect();
+```javascript
+const field = document.querySelector(".game__field");
+const fieldRect = field.getBoundingClientRect();
+```
