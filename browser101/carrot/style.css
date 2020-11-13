@@ -45,6 +45,7 @@ body {
   border-radius: 20px;
   font-size: 32px;
   margin-top: 8px;
+  visibility: hidden;
 }
 
 .game__score {
@@ -58,6 +59,7 @@ body {
   color: white;
   border: 3px solid black;
   line-height: 100%;
+  visibility: hidden;
 }
 
 .game__field {
