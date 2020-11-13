@@ -36,3 +36,8 @@
 const field = document.querySelector(".game__field");
 const fieldRect = field.getBoundingClientRect();
 ```
+### Position
+- static: 모든 태그들은 기본적으론 position: static 상태
+- relative: static에서 태그 위치를 살짱 변경하고 싶을 때 사용 (top,bottom,left,right) 겹치면 z-index 속성 사용
+- absolute: static 속성이 아닌 부모를 기준 삼음 (div가 width:100%가 아니게 된다)
+- fixed: 특정 위치에 고정 (div가 width:100%가 아니게 된다)
