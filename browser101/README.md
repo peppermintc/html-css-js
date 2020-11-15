@@ -45,3 +45,7 @@ const fieldRect = field.getBoundingClientRect();
 - fixed: 특정 위치에 고정 (div가 width:100%가 아니게 된다)
 
 ### display: none은 렌더트리에 element를 포함시키지 않기 때문에 다른 element들의 사이즈에 영향을 줄 수 있음, 이 경우에는 visibility: hidden;을 사용
+
+### javascript object는 const로 선언하더라도 key 값으로 조회하여 변경할 수 있음
+
+### primitive type은 그 값이 메모리에 저장되지만 object의 경우에는 사이즈가 크기 때문에 주소값을 메모리에 저장
