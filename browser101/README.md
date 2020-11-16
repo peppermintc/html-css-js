@@ -49,3 +49,5 @@ const fieldRect = field.getBoundingClientRect();
 ### javascript object는 const로 선언하더라도 key 값으로 조회하여 변경할 수 있음
 
 ### primitive type은 그 값이 메모리에 저장되지만 object의 경우에는 사이즈가 크기 때문에 주소값을 메모리에 저장
+
+### script tag에 type module을 추가해줌으로써 javascript의 import, export를 브라우저가 지원하도록 할 수 있고 기본적으로 defer 속성을 가지기 때문에 따로 defer 속성을 명시 할 필요가 없음
