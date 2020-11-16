@@ -51,3 +51,9 @@ const fieldRect = field.getBoundingClientRect();
 ### primitive type은 그 값이 메모리에 저장되지만 object의 경우에는 사이즈가 크기 때문에 주소값을 메모리에 저장
 
 ### script tag에 type module을 추가해줌으로써 javascript의 import, export를 브라우저가 지원하도록 할 수 있고 기본적으로 defer 속성을 가지기 때문에 따로 defer 속성을 명시 할 필요가 없음
+
+### class binding
+
+- 함수를 인자 혹은 콜백으로 전달할 경우, class 정보는 함께 전달되어지지 않으므로, 함수 내부에서 this 정보가 존재하지 않음
+- 클래스 정보를 사용하여 this를 사용하고 싶을 경우, 클래스와 바인딩을 해주거나 arrow function을 사용 (보통은 arrow function을 많이 사용)
+- arrow function은 this가 유지됨
