@@ -57,3 +57,8 @@ const fieldRect = field.getBoundingClientRect();
 - 함수를 인자 혹은 콜백으로 전달할 경우, class 정보는 함께 전달되어지지 않으므로, 함수 내부에서 this 정보가 존재하지 않음
 - 클래스 정보를 사용하여 this를 사용하고 싶을 경우, 클래스와 바인딩을 해주거나 arrow function을 사용 (보통은 arrow function을 많이 사용)
 - arrow function은 this가 유지됨
+
+### Builder Pattern
+
+- 빌드 클래스를 만들어 내부의 클래스를 노출시키지 않고 메소드 체이닝으 이용하여 가독성을 향상 시킬 수 있음
+- 클래스 생성시 입력하는 설정 파라미터 값들을 볼 수 있는 장점이 있음
