@@ -62,3 +62,5 @@ const fieldRect = field.getBoundingClientRect();
 
 - 빌드 클래스를 만들어 내부의 클래스를 노출시키지 않고 메소드 체이닝으 이용하여 가독성을 향상 시킬 수 있음
 - 클래스 생성시 입력하는 설정 파라미터 값들을 볼 수 있는 장점이 있음
+
+### Object.freeze를 사용함으로써 Object 불변성을 유지하면서 Object 생성
