@@ -64,3 +64,10 @@ const fieldRect = field.getBoundingClientRect();
 - 클래스 생성시 입력하는 설정 파라미터 값들을 볼 수 있는 장점이 있음
 
 ### Object.freeze를 사용함으로써 Object 불변성을 유지하면서 Object 생성
+
+### 각각의 process는 독립된 Heap, Data, Stack, Code로 구성되어짐 thread는 multi-thread의 경우 Heap, Data, Code는 공유, Stack은 독립된 stack을 가짐
+
+- Heap: 동적 생성 데이터 저장
+- Data: 정적 데이터, 글로벌 변수 데이터
+- Code: 프로그램 코드
+- Stack: 함수 호출을 기록하는 Last In Last Oout 자료구조
