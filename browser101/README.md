@@ -71,3 +71,9 @@ const fieldRect = field.getBoundingClientRect();
 - Data: 정적 데이터, 글로벌 변수 데이터
 - Code: 프로그램 코드
 - Stack: 함수 호출을 기록하는 Last In Last Oout 자료구조
+
+### JavaScript Runtime Environment
+
+- Event Loop은 Call Stack이 비어서 동작하지 않을 때, Task Queue에서 callback을 Call Stack으로 가져와서 Javascript Engine이 수행 할 수 있게 도와줌
+
+- Event Listener에서 Click Event가 발생하면 Task Queue에 Click Callback이 쌓여서 기다리고 있다가 Call Stack이 비었을 때 Event Loop를 통해서 Call Stack으로 옮겨져 처리됨
