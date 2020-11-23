@@ -77,3 +77,25 @@ const fieldRect = field.getBoundingClientRect();
 - Event Loop은 Call Stack이 비어서 동작하지 않을 때, Task Queue에서 callback을 Call Stack으로 가져와서 Javascript Engine이 수행 할 수 있게 도와줌
 
 - Event Listener에서 Click Event가 발생하면 Task Queue에 Click Callback이 쌓여서 기다리고 있다가 Call Stack이 비었을 때 Event Loop를 통해서 Call Stack으로 옮겨져 처리됨
+
+### Microtask Queue
+
+- Promise에 등록된 콜백이 다 수행되고 나면 then에 등록한 콜백 함수와 Mutation observer들이 Microtask Queue에 들어옴
+- 예: fetch를 promise에서 수행하는 것이 resolve가 되면 then의 콜백과 Mutation Observer가 microtask queue에 들어옴
+- Microtask Queue가 Call Stack으로 옮겨져 수행이 될 때에는 도중에 새롭게 microtask Queue에 들어온 task까지도 모두 완료 될 때까지 callstack에서 수행됨 (Task Queue에서는 한개의 callback만 callstack에서 수행되는 것과 차이있음)
+- Task Queue는 한번 돌때 하나씩만 꺼내서 실행, MicroTask Queue는 한번 방문하면 큐안에 있는 모든 Task들을 다 꺼내서 실행
+
+### Mutation Observer
+
+- DOM Element의 변경사항 감시 기능 제공하는 객체
+
+### Render
+
+- Request Animation Frame -> Render Tree 생성 -> layout -> Paint, Composite -> 표시
+- layout: 크기와 위치들 계산
+- composite: 병합
+
+### Request Animation Frame
+
+- 다음에 브라우저가 업데이트 되기 전에 실행 할 콜백들을 큐에 쌓아둠
+- 60fps 사람 눈에 애니메이션이 자연스럽게 보이기 위한 표시 속도에 맞추어 브라우저는 Render를 수행함
