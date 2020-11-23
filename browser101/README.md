@@ -97,5 +97,12 @@ const fieldRect = field.getBoundingClientRect();
 
 ### Request Animation Frame
 
-- 다음에 브라우저가 업데이트 되기 전에 실행 할 콜백들을 큐에 쌓아둠
+- 다음에 브라우저가 업데이트 되기 전에 실행 할 콜백들을 큐에 쌓아두고 렌더링 트리를 만들기 전에 큐의 task들을 모두 수행한다
 - 60fps 사람 눈에 애니메이션이 자연스럽게 보이기 위한 표시 속도에 맞추어 브라우저는 Render를 수행함
+
+### Call Stack에서 Callback을 동작시키는 동안은 브라우저는 다른 동작을 하지 않기 때문에 Callback을 최대한 간단하게 구현하는 것을 권장
+
+### Task Queue와 Micro Task Queue의 차이
+
+- promise의 콜백은 micro task queue로 옮겨진다
+- micro task queue는 모든 task가 완료 될 때까지 다른 동작을 수행하지 않는다
